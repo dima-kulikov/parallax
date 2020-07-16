@@ -5,14 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Placeholder title</title>
-    <!-- Сюда будет всталена ссылка на файл стилей -->
-    <!-- inject:css -->
-    <!-- endinject -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
 
   <body>
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
+    <header>
+      <nav class="top">
+<div class="top__logo"> Logo Logo </div>
+
+         <div class="top__menu">
+           <ul>
+             <li><a href="#">Commercial</a></li>
+             <li><a href="#">Editorial</a></li>
+             <li><a href="#">Reportage</a></li>
+             <li><a href="#">Meet Me</a></li>
+           </ul>
+        </div>
+        
+        
+        <div class="burger-button">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+         <div class="burger-menu">
+          <a href="#">Commercial</a>
+           <a href="#">Editorial</a>
+           <a href="#">Reportage</a>
+           <a href="#">Meet Me</a>
+        </div>
+      </nav>
+    </header>
+
+        <script>
+         $( document ).ready(function() {
+   $(".burger-button").click(function(){
+     $(".burger-button").toggleClass("active");
+     $(".burger-menu").toggleClass("active");
+   });
+});
+        </script>
+
+
+
+        <section class="parallax">
+          <div class="mouse-parallax">
+
+            
+           <div class="mouse-parallax-bg1"></div>
+           <div class="mouse-parallax-bg2"></div>
+           <div class="mouse-parallax-bg3"></div>
+        </div>
+        </section>
+        <script>
+          
+
+
+let bg1 = document.querySelector('.mouse-parallax-bg1');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;  
+    bg1.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+
+let bg2 = document.querySelector('.mouse-parallax-bg2');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;  
+    bg2.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+
+let bg3 = document.querySelector('.mouse-parallax-bg3');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;  
+    bg3.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+        </script>
   </body>
 </html>

@@ -1,0 +1,76 @@
+// .parallax{
+//     outline: 2px solid red;
+//     position: relative;
+// }
+
+// .girl{
+//     position: absolute;
+//     width: 476px;
+//     height: 702px;
+//     background-image: url(../images/image1.png);
+//     background-size: cover;
+// }
+
+.mouse-parallax {
+    height: 600px;
+  width: 100%;
+    position: relative;
+    // overflow: hidden;
+  outline: 2px solid red;
+/*   margin: 10px; */
+  top: 0px;
+}
+
+.mouse-parallax-bg1 {
+    top: 100px;
+    height: 0px;
+    left: 330px;
+    right: 0px;
+  /*   margin: auto; */
+      position: absolute;
+      background-image: url("../images/image2.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 238px;
+      height: 331px;
+      transition: all 0.1s ease; 
+      transform: rotate(2deg);  
+  }
+
+.mouse-parallax-bg2 {
+  top: -100px;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+    position: absolute;
+    background-image: url("../images/image1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 476px;
+    height: 702px;
+    transition: all 0.1s ease;  
+    transform: rotate(2deg); 
+}
+
+.mouse-parallax-bg3 {
+    top: 310px;
+    height: 0px;
+    // left: 0px;
+    right: 360px;
+    // margin: auto;
+      position: absolute;
+      background-image: url("../images/image3.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 345px;
+      height: 238px;
+      transition: all 0.1s ease;
+      transform: rotate(4deg); 
+  }
+
+
+

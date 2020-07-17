@@ -47,6 +47,6 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0",
-    "usedcss": "^1.0.7"
+    "usedcss": "^1.0.7".
   }
 }

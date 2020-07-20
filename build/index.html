@@ -1,9 +1,86 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Placeholder title</title><link rel="stylesheet" type="text/css" href="./css/styles.css?t=1595234125271"><script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script><script type="text/javascript" src="./js/scripts.js?t=1595234125271"></script></head><body><header><nav class="top"><div class="top__logo">Logo Logo</div><div class="top__menu"><ul><li><a href="#">Commercial</a></li><li><a href="#">Editorial</a></li><li><a href="#">Reportage</a></li><li><a href="#">Meet Me</a></li></ul></div><div class="burger-button"><span class="burger-top"></span> <span class="burger-middle"></span> <span class="burger-bottom"></span></div><div class="burger-menu"><a href="#">Commercial</a> <a href="#">Editorial</a> <a href="#">Reportage</a> <a href="#">Meet Me</a></div></nav></header><script>$(document).ready(function () {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.9.1.js"
+    ></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="top">
+        <div class="top__logo">Logo Logo</div>
+
+        <div class="top__menu">
+          <ul>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Editorial</a></li>
+            <li><a href="#">Reportage</a></li>
+            <li><a href="#">Meet Me</a></li>
+          </ul>
+        </div>
+
+        <div class="burger-button">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </div>
+        <div class="burger-menu">
+          <a href="#">Commercial</a>
+          <a href="#">Editorial</a>
+          <a href="#">Reportage</a>
+          <a href="#">Meet Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      $(document).ready(function () {
         $('.burger-button').click(function () {
           $('.burger-button').toggleClass('active');
           $('.burger-menu').toggleClass('active');
         });
-      });</script><section class="parallax"><div class="mouse-parallax"><div class="parallax__rotate1"><div class="mouse-parallax-bg1"></div></div><div class="parallax__rotate2"><div class="mouse-parallax-bg2"></div></div><div class="parallax__rotate3"><div class="mouse-parallax-bg3"></div></div></div><div id="floatingmes">DRAG ME</div><!-- СЛАЙДЕР --><div id="block" class="slider-programs-container"><div class="slider-programs"><div data-slick-outer="1"><div data-slick-inner="1" class="icon icon-1HPB"></div></div><div data-slick-outer="2"><div data-slick-inner="2" class="icon icon-2FME"></div></div><div data-slick-outer="3"><div data-slick-inner="3" class="icon icon-3ADRE"></div></div></div></div></section><script>let bg1 = document.querySelector('.mouse-parallax-bg1');
+      });
+    </script>
+
+    <section class="parallax">
+      <div class="mouse-parallax">
+        <div class="parallax__rotate1">
+          <div class="mouse-parallax-bg1"></div>
+        </div>
+        <div class="parallax__rotate2">
+          <div class="mouse-parallax-bg2"></div>
+        </div>
+        <div class="parallax__rotate3">
+          <div class="mouse-parallax-bg3"></div>
+        </div>
+      </div>
+
+      <div id="floatingmes">DRAG ME</div>
+      <!-- СЛАЙДЕР -->
+      <div id="block" class="slider-programs-container">
+        <div class="slider-programs">
+          <div data-slick-outer="1">
+            <div data-slick-inner="1" class="icon icon-1HPB"></div>
+          </div>
+          <div data-slick-outer="2">
+            <div data-slick-inner="2" class="icon icon-2FME"></div>
+          </div>
+          <div data-slick-outer="3">
+            <div data-slick-inner="3" class="icon icon-3ADRE"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let bg1 = document.querySelector('.mouse-parallax-bg1');
       window.addEventListener('mousemove', function (e) {
         let x = e.clientX / window.innerWidth;
         let y = e.clientY / window.innerHeight;
@@ -23,4 +100,7 @@
         let y = e.clientY / window.innerHeight;
         bg3.style.transform =
           'translate(-' + x * 70 + 'px, -' + y * 110 + 'px)';
-      });</script></body></html>
+      });
+    </script>
+  </body>
+</html>

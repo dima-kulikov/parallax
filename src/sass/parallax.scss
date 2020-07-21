@@ -4,9 +4,9 @@
   position: relative;
   // overflow: hidden;
   // outline: 2px solid red;
-  margin: 0px auto; 
+  margin: 0px auto;
   top: 0px;
-  @media(max-width:1080px){
+  @media (max-width: 1080px) {
     max-width: 768px;
   }
 }
@@ -17,21 +17,32 @@
   left: -43px;
   right: 0px;
   position: absolute;
-  background-image: url("../images/image2.png");
+  background-image: url('../images/image2.png');
   background-position: 50% 15%;
   background-repeat: no-repeat;
   background-size: 225%;
   width: 238px;
   height: 331px;
-  transition: all 0.1s ease; 
-  @media(max-width:1080px){
+  transition: all 0.1s ease;
+  animation-name: girl-1;
+  animation-duration: 1500ms, 1ms;
+
+  @media (max-width: 1080px) {
     width: 163px;
-    height: 226px;  
+    height: 226px;
     top: 15px;
     left: 30px;
   }
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     display: none;
+  }
+  @keyframes girl-1 {
+    0% {
+      left: 2000px;
+    }
+    100% {
+      left: -43px;
+    }
   }
 }
 
@@ -42,21 +53,32 @@
   right: 0px;
   margin: auto;
   position: absolute;
-  background-image: url("../images/image1.png");
+  background-image: url('../images/image1.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 476px;
   height: 702px;
-  transition: all 0.1s ease;  
-  @media(max-width:1080px){
+  transition: all 0.1s ease;
+  animation-name: girl-2;
+  animation-duration: 1500ms, 1ms;
+
+  @media (max-width: 1080px) {
     width: 359px;
-    height: 530px;  
+    height: 530px;
   }
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     top: 100px;
     width: 273px;
-    height: 403px;  
+    height: 403px;
+  }
+  @keyframes girl-2 {
+    0% {
+      top: -2000px;
+    }
+    100% {
+      top: -100px;
+    }
   }
 }
 
@@ -67,34 +89,43 @@
   right: -75px;
   // margin: auto;
   position: absolute;
-  background-image: url("../images/image3.png");
+  background-image: url('../images/image3.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 345px;
   height: 238px;
   transition: all 0.1s ease;
-  @media(max-width:1080px){
+  animation-name: girl-3;
+  animation-duration: 1500ms, 1ms;
+
+  @media (max-width: 1080px) {
     width: 234px;
-    height: 162px;  
+    height: 162px;
     top: 220px;
     right: 10px;
   }
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     display: none;
+  }
+  @keyframes girl-3 {
+    0% {
+      right: 2000px;
+    }
+    100% {
+      right: -75px;
+    }
   }
 }
 
-.parallax__rotate1{
-  transform: rotate(1deg); 
+.parallax__rotate1 {
+  transform: rotate(1deg);
 }
 
-.parallax__rotate2{
-  transform: rotate(2deg); 
+.parallax__rotate2 {
+  transform: rotate(2deg);
 }
 
-.parallax__rotate3{
-  transform: rotate(4deg); 
+.parallax__rotate3 {
+  transform: rotate(4deg);
 }
-
-

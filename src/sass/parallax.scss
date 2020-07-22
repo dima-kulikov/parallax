@@ -27,15 +27,6 @@
   animation-name: girl-1;
   animation-duration: 1500ms, 1ms;
 
-  @media (max-width: 1080px) {
-    width: 163px;
-    height: 226px;
-    top: 15px;
-    left: 30px;
-  }
-  @media (max-width: 600px) {
-    display: none;
-  }
   @keyframes girl-1 {
     0% {
       left: 2000px;
@@ -43,6 +34,24 @@
     100% {
       left: -43px;
     }
+  }
+
+  @media (max-width: 1080px) {
+    width: 163px;
+    height: 226px;
+    top: 15px;
+    left: 30px;
+    @keyframes girl-1 {
+      0% {
+        left: 2000px;
+      }
+      100% {
+        left: 30px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    display: none;
   }
 }
 
@@ -63,6 +72,15 @@
   animation-name: girl-2;
   animation-duration: 1500ms, 1ms;
 
+  @keyframes girl-2 {
+    0% {
+      top: -2000px;
+    }
+    100% {
+      top: -100px;
+    }
+  }
+
   @media (max-width: 1080px) {
     width: 359px;
     height: 530px;
@@ -71,13 +89,13 @@
     top: 100px;
     width: 273px;
     height: 403px;
-  }
-  @keyframes girl-2 {
-    0% {
-      top: -2000px;
-    }
-    100% {
-      top: -100px;
+    @keyframes girl-2 {
+      0% {
+        top: -2000px;
+      }
+      100% {
+        top: 100px;
+      }
     }
   }
 }
@@ -99,15 +117,6 @@
   animation-name: girl-3;
   animation-duration: 1500ms, 1ms;
 
-  @media (max-width: 1080px) {
-    width: 234px;
-    height: 162px;
-    top: 220px;
-    right: 10px;
-  }
-  @media (max-width: 600px) {
-    display: none;
-  }
   @keyframes girl-3 {
     0% {
       right: 2000px;
@@ -115,6 +124,25 @@
     100% {
       right: -75px;
     }
+  }
+
+  @media (max-width: 1080px) {
+    width: 234px;
+    height: 162px;
+    top: 220px;
+    right: 10px;
+
+    @keyframes girl-3 {
+      0% {
+        right: 2000px;
+      }
+      100% {
+        right: 10px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    display: none;
   }
 }
 

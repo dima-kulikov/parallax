@@ -1,0 +1,31 @@
+.footer {
+  margin: 43px;
+
+  .footer__social {
+    display: flex;
+    align-items: center;
+    width: 112px;
+
+    .footer__social__line {
+      width: 56px;
+      height: 1px;
+      background: #393939;
+      opacity: 0.24;
+
+      margin: 5px 10px 0px;
+    }
+  }
+
+  a {
+    font-family: TT Travels;
+    font-size: 11px;
+    line-height: 13px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #000000;
+  }
+}

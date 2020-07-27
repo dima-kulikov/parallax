@@ -1,4 +1,17 @@
 $black: #000000;
+@font-face {
+  font-family: 'TT Travels';
+  src: url('../fonts/TT_Travel/TTTravels-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Schnyder X Condensed';
+  src: url('../fonts/Schnyder_X_Condensed/Schnyder_X_Cond_L_Demi.otf')
+    format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
 
 body {
   background-image: url(../images/vector.png);
@@ -11,7 +24,7 @@ body {
   justify-content: space-between;
   margin: 43px;
 
-  .logo {
+  .top__logo {
     font-family: GT America;
     font-style: normal;
     font-weight: bold;

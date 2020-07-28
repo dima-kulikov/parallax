@@ -42,6 +42,7 @@ body {
 
     ul {
       list-style-type: none;
+
     }
 
     li {
@@ -59,9 +60,35 @@ body {
       text-align: right;
       letter-spacing: 0.02em;
       text-transform: capitalize;
-
-      transition: left 1.4s cubic-bezier(0.215, 0.61, 0.355, 1), width 1.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: 2s;
+      margin-right: 10px;
     }
+
+    a:hover{
+      color: #580300;
+      border-bottom: 2px solid #580300;
+transition: 1s;
+      font-size: 14px;
+      line-height: 12px;
+      margin-right: 0px;
+      font-style: bold;
+    }
+//     a:hover::before {
+//       display: inline-block;
+//     content: "";
+//     width:2px;
+//     height: 2px;
+//     background-color: red;
+//     transition: 2s;
+// }
+//     a:hover::after {
+//       display: inline-block;
+//     content: "";
+//     width:4px;
+//     height: 4px;
+//     background-color: red;
+//     transition: 2s;
+// }
   }
 }
 

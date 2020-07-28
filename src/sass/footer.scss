@@ -5,6 +5,21 @@
     display: flex;
     align-items: center;
     width: 112px;
+    transition: all 0.1s ease;
+    animation-name: foot-anime;
+    animation-duration: 7500ms, 1ms;
+  @keyframes foot-anime {
+    0% {
+      position: absolute;
+      top: 0px;
+    }
+    50% {
+      // top: 1500px;
+    }
+    100% {
+      top: 1750px;
+    }
+  }
 
     .footer__social__line {
       width: 56px;
@@ -12,32 +27,30 @@
       background: #393939;
       opacity: 0.24;
 
-      margin: 5px 10px 0px;
+      margin: 0px 10px;
+    }
+    a {
+      font-family: TT Travels;
+      font-size: 11px;
+      line-height: 13px;
+      /* identical to box height */
+  
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #000000;
+    }
+    a:hover{
+      color: #580300;
+      border-bottom: 2px solid #580300;
+      transition: 0.4s;
+      font-size: 16px;
+      line-height: 12px;
+      margin-right: 0px;
+      font-style: bold;
     }
   }
 
-  a {
-    font-family: TT Travels;
-    font-size: 11px;
-    line-height: 13px;
-    /* identical to box height */
 
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #000000;
-  }
 }
- a:hover {
-    /* line-height: 29px; */
-    font-size: 14px;
-    text-align: center;
-    justify-content: center;
-    background-color: #0004ff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: white;
- }

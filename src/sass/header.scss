@@ -1,4 +1,5 @@
 $black: #000000;
+$red: #580300;
 @font-face {
   font-family: 'TT Travels';
   src: url('../fonts/TT_Travel/TTTravels-Medium.ttf') format('truetype');
@@ -32,13 +33,50 @@ body {
     line-height: 16px;
     letter-spacing: -1px;
     color: #000000;
+
+    transition: all 0.1s ease;
+    animation-name: logo-anime;
+    animation-duration: 4000ms, 1ms;
+  @keyframes logo-anime {
+    0% {
+      color: #000000;
+    }
+    25% {
+      // color: #910905;
+
+          }
+    50% {
+      color: #750602;
+      font-size: 30px;
+          }
+   
+      100% {
+        // color: #000000;
+        } 
+  }
   }
 
   .top__menu {
     display: block;
+    transition: all 0.1s ease;
+      animation-name: top-anime;
+      animation-duration: 3500ms, 1ms;
+    @keyframes top-anime {
+      0% {
+        padding-right: 90% ;
+      }
+      50% {
+      }
+      100% {
+      }
+    }
     @media (max-width: 600px) {
       display: none;
     }
+      
+  
+     
+    
 
     ul {
       list-style-type: none;
@@ -73,22 +111,6 @@ transition: 1s;
       margin-right: 0px;
       font-style: bold;
     }
-//     a:hover::before {
-//       display: inline-block;
-//     content: "";
-//     width:2px;
-//     height: 2px;
-//     background-color: red;
-//     transition: 2s;
-// }
-//     a:hover::after {
-//       display: inline-block;
-//     content: "";
-//     width:4px;
-//     height: 4px;
-//     background-color: red;
-//     transition: 2s;
-// }
   }
 }
 

@@ -100,6 +100,15 @@
       // top: 100px;
       width: 250px;
       height: 369px;
+
+      @keyframes girl-2 {
+        0% {
+          top: -1000px;
+        }
+        100% {
+          top: 100px;
+        }
+      }
     }
   }
 

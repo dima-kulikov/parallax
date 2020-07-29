@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   cursor: url(../images/Ellipse.png), pointer;
+  overflow-x: hidden;
 }
 .top {
   display: flex;
@@ -37,33 +38,32 @@ body {
     transition: all 0.1s ease;
     animation-name: logo-anime;
     animation-duration: 4000ms, 1ms;
-  @keyframes logo-anime {
-    0% {
-      color: #000000;
-    }
-    25% {
-      // color: #910905;
+    @keyframes logo-anime {
+      0% {
+        color: #000000;
+      }
+      25% {
+        // color: #910905;
+      }
+      50% {
+        color: #750602;
+        font-size: 30px;
+      }
 
-          }
-    50% {
-      color: #750602;
-      font-size: 30px;
-          }
-   
       100% {
         // color: #000000;
-        } 
-  }
+      }
+    }
   }
 
   .top__menu {
     display: block;
     transition: all 0.1s ease;
-      animation-name: top-anime;
-      animation-duration: 3500ms, 1ms;
+    animation-name: top-anime;
+    animation-duration: 3500ms, 1ms;
     @keyframes top-anime {
       0% {
-        padding-right: 90% ;
+        padding-right: 90%;
       }
       50% {
       }
@@ -73,14 +73,9 @@ body {
     @media (max-width: 600px) {
       display: none;
     }
-      
-  
-     
-    
 
     ul {
       list-style-type: none;
-
     }
 
     li {
@@ -102,10 +97,10 @@ body {
       margin-right: 10px;
     }
 
-    a:hover{
+    a:hover {
       color: #580300;
       border-bottom: 2px solid #580300;
-transition: 1s;
+      transition: 1s;
       font-size: 14px;
       line-height: 12px;
       margin-right: 0px;
@@ -207,26 +202,27 @@ transition: 1s;
 
 .underline {
   border: 2px solid transparent;
-  
+
   &::after {
     width: 0%;
     height: 2px;
     display: block;
     background-color: rgb(207, 25, 25);
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 34px;
     left: 50%;
-    transition: left 1.4s cubic-bezier(0.215, 0.61, 0.355, 1), width 1.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: left 1.4s cubic-bezier(0.215, 0.61, 0.355, 1),
+      width 1.4s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  
+
   &:hover {
     &::after {
       width: 100%;
       height: 2px;
       display: block;
       background-color: rgb(22, 21, 21);
-      content: " ";
+      content: ' ';
       position: absolute;
       top: 34px;
       left: 0;

@@ -8,18 +8,42 @@
     transition: all 0.1s ease;
     animation-name: foot-anime;
     animation-duration: 7500ms, 1ms;
-  @keyframes foot-anime {
-    0% {
-      position: absolute;
-      top: 0px;
+    @keyframes foot-anime {
+      0% {
+        position: absolute;
+        top: 0px;
+      }
+      50% {
+        // top: 1500px;
+      }
+      100% {
+        top: 1750px;
+      }
     }
-    50% {
-      // top: 1500px;
+    @media (max-width: 1080px) {
+      @keyframes foot-anime {
+        0% {
+          position: absolute;
+          top: 0px;
+        }
+
+        100% {
+          top: 1550px;
+        }
+      }
     }
-    100% {
-      top: 1750px;
+    @media (max-width: 600px) {
+      @keyframes foot-anime {
+        0% {
+          position: absolute;
+          top: 0px;
+        }
+
+        100% {
+          top: 1300px;
+        }
+      }
     }
-  }
 
     .footer__social__line {
       width: 56px;
@@ -34,14 +58,14 @@
       font-size: 11px;
       line-height: 13px;
       /* identical to box height */
-  
+
       display: flex;
       align-items: flex-end;
       letter-spacing: 0.02em;
       text-decoration: none;
       color: #000000;
     }
-    a:hover{
+    a:hover {
       color: #580300;
       border-bottom: 2px solid #580300;
       transition: 0.4s;
@@ -51,6 +75,4 @@
       font-style: bold;
     }
   }
-
-
 }
